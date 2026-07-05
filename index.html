@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumiTechPoint | Plataforma de Fidelización y Analítica</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Premium Header -->
+    <header class="main-header">
+        <div class="header-logo">
+            <span class="logo-accent">Sumi</span>TechPoint
+        </div>
+        <div class="header-tagline">
+            <span class="badge badge-purple">Loyalty & Analytics Dashboard</span>
+            <span class="badge badge-cyan">SumiTechPoint Client App Simulator</span>
+        </div>
+    </header>
+
+    <!-- App Container -->
+    <main class="app-container">
+        <!-- LEFT PANEL: Business Analytics & Academic Report -->
+        <section class="left-panel">
+            <!-- Sidebar Navigation inside Admin Panel -->
+            <nav class="admin-nav">
+                <button class="nav-btn active" data-section="strategy-sec">
+                    <i class="fa-solid fa-chart-line"></i> Estrategia y Objetivos
+                </button>
+                <button class="nav-btn" data-section="transformation-sec">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i> Antes vs Después
+                </button>
+                <button class="nav-btn" data-section="dashboard-sec">
+                    <i class="fa-solid fa-square-poll-vertical"></i> Panel de Evidencias (Profesor)
+                </button>
+                <button class="nav-btn" data-section="database-sec">
+                    <i class="fa-solid fa-database"></i> Base de Datos Clientes
+                </button>
+            </nav>
+
+            <div class="admin-content-area">
+                <!-- Section 1: Strategy and Growth Objectives -->
+                <article id="strategy-sec" class="admin-section active">
+                    <h2 class="section-title">Estrategia de Crecimiento - SumiTechPoint</h2>
+                    <p class="section-description">
+                        Análisis del plan de crecimiento comercial de la tienda física (Wilson) a través de la digitalización y el portal del cliente SumiTechPoint.
+                    </p>
+
+                    <div class="grid-2">
+                        <div class="card glass">
+                            <div class="card-icon cyan"><i class="fa-solid fa-bullseye"></i></div>
+                            <h3>Área de Crecimiento Objetivo</h3>
+                            <p>
+                                SumiTechPoint enfocará su crecimiento en el incremento de su cartera de clientes. Para lograrlo, implementa una estrategia de recomendación física en tienda y atracción digital ofreciendo beneficios tecnológicos exclusivos a través del aplicativo.
+                            </p>
+                        </div>
+                        <div class="card glass">
+                            <div class="card-icon purple"><i class="fa-solid fa-store"></i></div>
+                            <h3>Canal Físico (Wilson)</h3>
+                            <p>
+                                El personal de ventas en Wilson actúa como el primer punto de contacto, guiando a los compradores actuales a descargar e instalar la app <strong>SumiTechPoint</strong> y animándolos a recomendar el negocio a otros clientes para activar beneficios adicionales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card glass highlight-card">
+                        <div class="highlight-content">
+                            <h3><i class="fa-solid fa-gift text-cyan"></i> Beneficios de Atracción Exclusivos</h3>
+                            <p>
+                                Al registrarse y usar la aplicación, cada nuevo cliente obtiene acceso a herramientas de alta demanda totalmente gratuitas por 30 días:
+                            </p>
+                            <div class="benefits-grid-small">
+                                <div class="benefit-item-small">
+                                    <span class="icon-circle antivirus"><i class="fa-solid fa-shield-halved"></i></span>
+                                    <span>Antivirus Premium</span>
+                                </div>
+                                <div class="benefit-item-small">
+                                    <span class="icon-circle office"><i class="fa-solid fa-file-word"></i></span>
+                                    <span>Microsoft Office Suite</span>
+                                </div>
+                                <div class="benefit-item-small">
+                                    <span class="icon-circle cloud"><i class="fa-solid fa-cloud"></i></span>
+                                    <span>Almacenamiento en la Nube</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card glass">
+                        <h3>Objetivos de Crecimiento Proyectados</h3>
+                        <ul class="styled-list">
+                            <li><i class="fa-solid fa-circle-check text-cyan"></i> Incrementar la cartera de clientes totales en un <strong>20%</strong> en el transcurso del primer año.</li>
+                            <li><i class="fa-solid fa-circle-check text-cyan"></i> Lograr al menos <strong>180 nuevos clientes registrados</strong> directamente por el programa de recomendación (referidos).</li>
+                            <li><i class="fa-solid fa-circle-check text-cyan"></i> Fidelizar y retener a los clientes actuales mediante campañas promocionales personalizadas directo a la aplicación.</li>
+                            <li><i class="fa-solid fa-circle-check text-cyan"></i> Generar compras cruzadas mediante un catálogo digital fácil y accesible.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Section 2: Before vs After Transformation -->
+                <article id="transformation-sec" class="admin-section">
+                    <h2 class="section-title">Transformación Comercial (Antes vs Después)</h2>
+                    <p class="section-description">
+                        Comparativa de los procesos operativos antes y después de lanzar el aplicativo SumiTechPoint para la fidelización de clientes.
+                    </p>
+
+                    <div class="grid-2">
+                        <!-- Before Card -->
+                        <div class="card glass border-red">
+                            <div class="badge badge-red mb-1">ANTES (Operación Tradicional)</div>
+                            <ul class="comparison-list before-list">
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>Dependencia de Facebook para publicar ofertas, perdiendo alcance orgánico.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>Espera pasiva de mensajes directos por chat, demorando las respuestas de venta.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>Base de datos inexistente; no se guardaban datos de los compradores.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>Imposibilidad de enviar promociones o descuentos segmentados de forma directa.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>Sin beneficios tecnológicos adicionales; los clientes compraban por precio único.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <span>Pérdida constante de oportunidades de reventa al no tener un canal de retorno.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- After Card -->
+                        <div class="card glass border-green">
+                            <div class="badge badge-green mb-1">DESPUÉS (Con SumiTechPoint)</div>
+                            <ul class="comparison-list after-list">
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Los clientes descargan SumiTechPoint desde Play Store/App Store directamente.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Base de datos organizada y automatizada con Nombres, Correos y Teléfonos.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Notificación directa y personalizada de ofertas exclusivas y cupones.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Fidelización mediante beneficios gratuitos (Antivirus, Office, Nube).</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Catálogo interactivo categorizado en el celular, acelerando el proceso de compra.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Soporte técnico integrado por WhatsApp y chat en vivo, mejorando la satisfacción.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check-double"></i>
+                                    <span>Programa de recomendación (referidos) integrado para traccionar nuevos clientes.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Transformation Showcase -->
+                    <div class="card glass interactive-transformation">
+                        <h3>Simulación de Impacto</h3>
+                        <p>Interactúa con la aplicación en el simulador telefónico de la derecha para ver cómo la base de datos y las métricas se transforman y alimentan en tiempo real.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-label">Nivel de Madurez Tecnológica de la Empresa</div>
+                            <div class="progress-bar-bg">
+                                <div id="maturity-progress" class="progress-bar-fill" style="width: 30%;">30% (Analógico)</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3: Admin & Professor Evidence Dashboard -->
+                <article id="dashboard-sec" class="admin-section">
+                    <h2 class="section-title">Evidencia de Resultados Esperados (Proyecciones Académicas)</h2>
+                    <p class="section-description">
+                        Panel de resultados esperados de la implementación de la aplicación móvil de SumiTechPoint para presentar al profesor.
+                    </p>
+
+                    <!-- KPI Grid -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card glass">
+                            <span class="kpi-title">Descargas del Aplicativo</span>
+                            <span id="kpi-downloads" class="kpi-value">2,500</span>
+                            <span class="kpi-change text-green"><i class="fa-solid fa-circle-arrow-up"></i> +12% vs Proy.</span>
+                        </div>
+                        <div class="kpi-card glass">
+                            <span class="kpi-title">Clientes Registrados</span>
+                            <span id="kpi-registered" class="kpi-value">2,100</span>
+                            <span class="kpi-change text-green"><i class="fa-solid fa-circle-arrow-up"></i> 84% de Conversión</span>
+                        </div>
+                        <div class="kpi-card glass">
+                            <span class="kpi-title">Beneficios Canjeados</span>
+                            <span id="kpi-claimed" class="kpi-value">1,500</span>
+                            <span class="kpi-change text-green"><i class="fa-solid fa-circle-arrow-up"></i> 71% de Uso</span>
+                        </div>
+                        <div class="kpi-card glass">
+                            <span class="kpi-title">Consultas Soporte</span>
+                            <span id="kpi-chats" class="kpi-value">900</span>
+                            <span class="kpi-change text-purple"><i class="fa-solid fa-clock"></i> 95% Resol.</span>
+                        </div>
+                        <div class="kpi-card glass">
+                            <span class="kpi-title">Compras Realizadas</span>
+                            <span id="kpi-purchases" class="kpi-value">650</span>
+                            <span class="kpi-change text-green"><i class="fa-solid fa-cart-shopping"></i> Ticket Prom. S/ 150</span>
+                        </div>
+                        <div class="kpi-card glass">
+                            <span class="kpi-title">Clientes Referidos</span>
+                            <span id="kpi-referrals" class="kpi-value">180</span>
+                            <span class="kpi-change text-green"><i class="fa-solid fa-users"></i> Meta Alcanzada</span>
+                        </div>
+                    </div>
+
+                    <!-- Charts Area -->
+                    <div class="grid-2">
+                        <div class="card glass">
+                            <h3>Crecimiento Mensual (Descargas y Registros)</h3>
+                            <div class="chart-container">
+                                <!-- Dynamic SVG Chart for downloads/registrations -->
+                                <svg class="svg-chart" viewBox="0 0 500 220">
+                                    <defs>
+                                        <linearGradient id="downloadsGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.4"/>
+                                            <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+                                        </linearGradient>
+                                        <linearGradient id="regsGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.4"/>
+                                            <stop offset="100%" stop-color="#8a2be2" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Grid lines -->
+                                    <line x1="50" y1="20" x2="480" y2="20" stroke="#2a3250" stroke-width="1" stroke-dasharray="4"/>
+                                    <line x1="50" y1="70" x2="480" y2="70" stroke="#2a3250" stroke-width="1" stroke-dasharray="4"/>
+                                    <line x1="50" y1="120" x2="480" y2="120" stroke="#2a3250" stroke-width="1" stroke-dasharray="4"/>
+                                    <line x1="50" y1="170" x2="480" y2="170" stroke="#2a3250" stroke-width="1"/>
+                                    
+                                    <!-- Labels Y -->
+                                    <text x="40" y="24" fill="#a0aec0" font-size="10" text-anchor="end">2,500</text>
+                                    <text x="40" y="74" fill="#a0aec0" font-size="10" text-anchor="end">1,500</text>
+                                    <text x="40" y="124" fill="#a0aec0" font-size="10" text-anchor="end">500</text>
+                                    <text x="40" y="174" fill="#a0aec0" font-size="10" text-anchor="end">0</text>
+                                    
+                                    <!-- Area and lines for Descargas -->
+                                    <path d="M 50 170 Q 120 110 200 90 T 350 40 T 480 30 L 480 170 Z" fill="url(#downloadsGrad)"/>
+                                    <path d="M 50 170 Q 120 110 200 90 T 350 40 T 480 30" fill="none" stroke="#00e5ff" stroke-width="3"/>
+                                    
+                                    <!-- Area and lines for Registros -->
+                                    <path d="M 50 170 Q 120 140 200 120 T 350 65 T 480 50 L 480 170 Z" fill="url(#regsGrad)"/>
+                                    <path d="M 50 170 Q 120 140 200 120 T 350 65 T 480 50" fill="none" stroke="#8a2be2" stroke-width="3"/>
+
+                                    <!-- Dots indicating current live additions -->
+                                    <circle id="chart-pulse-download" cx="480" cy="30" r="6" fill="#00e5ff"/>
+                                    <circle id="chart-pulse-reg" cx="480" cy="50" r="6" fill="#8a2be2"/>
+
+                                    <!-- Labels X -->
+                                    <text x="50" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Mes 1</text>
+                                    <text x="136" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Mes 3</text>
+                                    <text x="222" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Mes 6</text>
+                                    <text x="308" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Mes 9</text>
+                                    <text x="394" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Mes 11</text>
+                                    <text x="480" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Actual</text>
+                                </svg>
+                            </div>
+                            <div class="legend">
+                                <span class="legend-item"><span class="bullet bg-cyan"></span> Descargas</span>
+                                <span class="legend-item"><span class="bullet bg-purple"></span> Registros</span>
+                            </div>
+                        </div>
+
+                        <div class="card glass">
+                            <h3>Impacto del Canal de Referidos e Incremento</h3>
+                            <div class="chart-container">
+                                <!-- Dynamic SVG Chart for Sales / Referral Conversion -->
+                                <svg class="svg-chart" viewBox="0 0 500 220">
+                                    <!-- Bar Chart for monthly sales increase -->
+                                    <line x1="50" y1="20" x2="480" y2="20" stroke="#2a3250" stroke-width="1" stroke-dasharray="4"/>
+                                    <line x1="50" y1="70" x2="480" y2="70" stroke="#2a3250" stroke-width="1" stroke-dasharray="4"/>
+                                    <line x1="50" y1="120" x2="480" y2="120" stroke="#2a3250" stroke-width="1" stroke-dasharray="4"/>
+                                    <line x1="50" y1="170" x2="480" y2="170" stroke="#2a3250" stroke-width="1"/>
+
+                                    <text x="40" y="24" fill="#a0aec0" font-size="10" text-anchor="end">+25%</text>
+                                    <text x="40" y="74" fill="#a0aec0" font-size="10" text-anchor="end">+15%</text>
+                                    <text x="40" y="124" fill="#a0aec0" font-size="10" text-anchor="end">+5%</text>
+                                    <text x="40" y="174" fill="#a0aec0" font-size="10" text-anchor="end">0%</text>
+
+                                    <!-- Bars for sales growth -->
+                                    <!-- Mes 1: 3% -->
+                                    <rect x="75" y="152" width="30" height="18" rx="4" fill="#8a2be2" opacity="0.6"/>
+                                    <!-- Mes 2: 7% -->
+                                    <rect x="155" y="128" width="30" height="42" rx="4" fill="#8a2be2" opacity="0.7"/>
+                                    <!-- Mes 3: 12% -->
+                                    <rect x="235" y="98" width="30" height="72" rx="4" fill="#8a2be2" opacity="0.8"/>
+                                    <!-- Mes 4 (Actual): 20% (from image 6) -->
+                                    <rect id="bar-growth-actual" x="315" y="50" width="30" height="120" rx="4" fill="#00e5ff"/>
+                                    
+                                    <!-- Overlay Target Line -->
+                                    <line x1="50" y1="50" x2="480" y2="50" stroke="#ff007f" stroke-width="2" stroke-dasharray="6,4"/>
+                                    <text x="470" y="42" fill="#ff007f" font-size="9" text-anchor="end">Meta de Crecimiento (20%)</text>
+
+                                    <!-- Labels X -->
+                                    <text x="90" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Trim. 1</text>
+                                    <text x="170" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Trim. 2</text>
+                                    <text x="250" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Trim. 3</text>
+                                    <text x="330" y="195" fill="#a0aec0" font-size="10" text-anchor="middle">Trim. 4 (Proy)</text>
+                                </svg>
+                            </div>
+                            <div class="legend">
+                                <span class="legend-item"><span class="bullet bg-cyan"></span> Ventas Adicionales</span>
+                                <span class="legend-item"><span class="bullet bg-pink"></span> Meta de Negocio</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 4: Live Client Database -->
+                <article id="database-sec" class="admin-section">
+                    <h2 class="section-title">Base de Datos de Clientes - SumiTechPoint</h2>
+                    <p class="section-description">
+                        Registro centralizado de la cartera de clientes. Al registrar un nuevo cliente en el simulador móvil de la derecha, la tabla se actualizará automáticamente en tiempo real.
+                    </p>
+
+                    <div class="card glass p-0">
+                        <div class="table-container">
+                            <table class="db-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID Cliente</th>
+                                        <th>Nombre Completo</th>
+                                        <th>Correo Electrónico</th>
+                                        <th>N° Celular</th>
+                                        <th>Canal de Registro</th>
+                                        <th>Fidelización</th>
+                                        <th>Fecha Registro</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="db-table-body">
+                                    <!-- Pre-populated simulated database entries -->
+                                    <tr>
+                                        <td>#STP-9831</td>
+                                        <td>Carlos Mendoza Pérez</td>
+                                        <td>carlos.mendoza@email.com</td>
+                                        <td>981 234 567</td>
+                                        <td><span class="badge badge-purple">Recomendado Wilson</span></td>
+                                        <td><span class="badge badge-green">Antivirus + Office</span></td>
+                                        <td>04-Jul-2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#STP-9830</td>
+                                        <td>Diana Torres Villegas</td>
+                                        <td>diana.torres@gmail.com</td>
+                                        <td>954 678 123</td>
+                                        <td><span class="badge badge-cyan">Campaña Digital</span></td>
+                                        <td><span class="badge badge-green">Nube Activa</span></td>
+                                        <td>03-Jul-2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#STP-9829</td>
+                                        <td>Jorge Flores Rivas</td>
+                                        <td>jorgeflores@outlook.com</td>
+                                        <td>998 112 345</td>
+                                        <td><span class="badge badge-purple">Recomendado Wilson</span></td>
+                                        <td><span class="badge-none">Ninguno</span></td>
+                                        <td>02-Jul-2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#STP-9828</td>
+                                        <td>Ana María Gómez</td>
+                                        <td>amaria.gomez@empresa.pe</td>
+                                        <td>912 345 678</td>
+                                        <td><span class="badge badge-cyan">Tienda Wilson</span></td>
+                                        <td><span class="badge badge-green">Antivirus Activo</span></td>
+                                        <td>01-Jul-2026</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- RIGHT PANEL: Smartphone Device Simulator -->
+        <section class="right-panel">
+            <div class="smartphone-frame">
+                <!-- Phone Top Details -->
+                <div class="phone-notch">
+                    <div class="camera-punch"></div>
+                    <div class="speaker-grill"></div>
+                </div>
+                
+                <div class="phone-screen">
+                    <!-- Status Bar -->
+                    <div class="status-bar">
+                        <span id="phone-clock" class="status-time">11:30</span>
+                        <div class="status-icons">
+                            <i class="fa-solid fa-signal"></i>
+                            <i class="fa-solid fa-wifi"></i>
+                            <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                    <!-- PHONE SCREENS WRAPPER -->
+                    <div class="phone-content">
+                        
+                        <!-- 1. Play Store Search Screen -->
+                        <div id="screen-playstore" class="phone-screen-view active">
+                            <div class="playstore-header">
+                                <div class="playstore-search-bar">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <input type="text" id="playstore-search-input" value="SumiTechPoint" disabled>
+                                    <i class="fa-solid fa-microphone"></i>
+                                </div>
+                            </div>
+                            <div class="playstore-body">
+                                <span class="playstore-label">Patrocinado</span>
+                                <div class="playstore-app-card" id="playstore-app-result">
+                                    <div class="app-icon-large">STP</div>
+                                    <div class="app-details-short">
+                                        <h4>SumiTechPoint</h4>
+                                        <p>Tecnología, beneficios y soporte al alcance de un clic.</p>
+                                        <div class="app-stats-row">
+                                            <span>4.8 <i class="fa-solid fa-star"></i></span>
+                                            <span>5 K opiniones</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-green-store" id="btn-open-store-details">Instalar</button>
+                                </div>
+                                <h4 class="section-subtitle-store">También te puede interesar</h4>
+                                <div class="store-suggestions">
+                                    <div class="suggestion-item">
+                                        <div class="suggest-icon ml"><i class="fa-solid fa-bag-shopping"></i></div>
+                                        <span>Mercado Libre</span>
+                                    </div>
+                                    <div class="suggestion-item">
+                                        <div class="suggest-icon wa"><i class="fa-brands fa-whatsapp"></i></div>
+                                        <span>WhatsApp</span>
+                                    </div>
+                                    <div class="suggestion-item">
+                                        <div class="suggest-icon tk"><i class="fa-brands fa-tiktok"></i></div>
+                                        <span>TikTok</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Play Store App Details Screen -->
+                        <div id="screen-store-details" class="phone-screen-view">
+                            <div class="playstore-details-header">
+                                <button class="store-back-btn" id="btn-back-to-store-search">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <div class="right-store-actions">
+                                    <i class="fa-solid fa-search"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class="playstore-details-body">
+                                <div class="app-info-block">
+                                    <div class="app-icon-giant">STP</div>
+                                    <div class="app-info-text">
+                                        <h3>SumiTechPoint</h3>
+                                        <p class="text-green-store font-500">SumiTechPoint S.A.C.</p>
+                                        <p class="text-muted text-xs">Contiene anuncios • Compras integradas</p>
+                                    </div>
+                                </div>
+                                <div class="app-meta-stats">
+                                    <div class="meta-item">
+                                        <span class="meta-val">4.8 <i class="fa-solid fa-star text-xs"></i></span>
+                                        <span class="meta-lbl">5 K opiniones</span>
+                                    </div>
+                                    <div class="meta-divider"></div>
+                                    <div class="meta-item">
+                                        <span class="meta-val"><i class="fa-solid fa-download text-xs"></i> 22 MB</span>
+                                        <span class="meta-lbl">Tamaño</span>
+                                    </div>
+                                    <div class="meta-divider"></div>
+                                    <div class="meta-item">
+                                        <span class="meta-val">Todos</span>
+                                        <span class="meta-lbl">Clasificación</span>
+                                    </div>
+                                </div>
+
+                                <!-- Install Control -->
+                                <div class="install-action-container">
+                                    <button class="btn btn-green-store w-full py-2" id="btn-start-installation">Instalar</button>
+                                    <div id="install-progress-wrapper" class="hidden">
+                                        <div class="install-progress-row">
+                                            <div class="spinner"></div>
+                                            <div class="progress-percent-lbl">Descargando... <span id="install-percentage">0%</span></div>
+                                        </div>
+                                        <div class="install-progress-bg">
+                                            <div id="install-progress-fill" class="install-progress-fill" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-green-store-outline w-full py-2 hidden" id="btn-open-app-first">Abrir</button>
+                                </div>
+
+                                <div class="store-app-description">
+                                    <h4>Acerca de esta app <i class="fa-solid fa-arrow-right text-xs"></i></h4>
+                                    <p>Tu tienda de tecnología con beneficios exclusivos y soporte técnico al alcance de tu mano.</p>
+                                    <div class="badge-store">Compras</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Welcome / Splash Screen -->
+                        <div id="screen-splash" class="phone-screen-view bg-gradient-blue text-white">
+                            <div class="splash-logo">
+                                <div class="app-icon-white mb-2">STP</div>
+                                <h2>SumiTechPoint</h2>
+                                <p>Tecnología, beneficios y soporte al alcance de un clic.</p>
+                            </div>
+                            <div class="splash-graphic">
+                                <div class="cart-illustration">
+                                    <i class="fa-solid fa-cart-shopping cart-base"></i>
+                                    <div class="float-icons">
+                                        <i class="fa-solid fa-laptop float-1"></i>
+                                        <i class="fa-solid fa-headphones float-2"></i>
+                                        <i class="fa-solid fa-shield-halved float-3 text-cyan"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splash-footer">
+                                <h3>¡Bienvenido!</h3>
+                                <p>Disfruta de beneficios exclusivos, soporte técnico y las mejores ofertas en tecnología.</p>
+                                <button class="btn btn-blue w-full mt-2" id="btn-splash-continue">Comenzar</button>
+                            </div>
+                        </div>
+
+                        <!-- 4. Register Account Screen -->
+                        <div id="screen-register" class="phone-screen-view bg-light">
+                            <div class="register-header">
+                                <button class="app-back-btn" id="btn-register-back-to-splash">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <h3 class="app-header-title">SumiTechPoint</h3>
+                            </div>
+                            <div class="register-body">
+                                <div class="register-title-block">
+                                    <h3>Crea tu cuenta</h3>
+                                    <p class="text-muted">Completa tus datos para comenzar</p>
+                                </div>
+                                <form id="form-user-register" class="app-form">
+                                    <div class="form-group-phone">
+                                        <i class="fa-regular fa-user form-icon"></i>
+                                        <input type="text" id="reg-name" placeholder="Nombre completo" required>
+                                    </div>
+                                    <div class="form-group-phone">
+                                        <i class="fa-regular fa-envelope form-icon"></i>
+                                        <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+                                    </div>
+                                    <div class="form-group-phone">
+                                        <i class="fa-solid fa-lock form-icon"></i>
+                                        <input type="password" id="reg-pass" placeholder="Contraseña" required>
+                                        <i class="fa-regular fa-eye toggle-pass"></i>
+                                    </div>
+                                    <div class="form-group-phone">
+                                        <i class="fa-solid fa-lock form-icon"></i>
+                                        <input type="password" id="reg-confirm-pass" placeholder="Confirmar contraseña" required>
+                                        <i class="fa-regular fa-eye toggle-pass"></i>
+                                    </div>
+                                    <div class="form-group-phone">
+                                        <i class="fa-solid fa-phone form-icon"></i>
+                                        <input type="tel" id="reg-phone" placeholder="Número de celular" required>
+                                    </div>
+                                    <div class="form-checkbox-row">
+                                        <input type="checkbox" id="reg-consent" required checked>
+                                        <label for="reg-consent">Autorizo el uso de mis datos con fines comerciales y de soporte.</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-blue w-full py-2 font-600 mt-1">Registrarse</button>
+                                </form>
+                                <div class="register-footer mt-2 text-center text-xs">
+                                    <span>¿Ya tienes cuenta? <a href="#" class="text-blue font-500">Inicia sesión</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Successful Register Screen -->
+                        <div id="screen-success" class="phone-screen-view bg-light text-center">
+                            <div class="success-content">
+                                <div class="success-checkmark">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <h2 class="success-title">¡Registro exitoso!</h2>
+                                <p class="text-muted">Tu cuenta ha sido creada correctamente.</p>
+                                
+                                <div class="gift-box-illustration">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                                
+                                <button class="btn btn-blue w-full py-2" id="btn-success-go-home">Ir al inicio</button>
+                            </div>
+                        </div>
+
+                        <!-- 6. Main Menu / App Dashboard Screen -->
+                        <div id="screen-app-home" class="phone-screen-view bg-light flex-col">
+                            <!-- App Header -->
+                            <div class="app-top-header">
+                                <div class="app-brand">SumiTechPoint</div>
+                                <div class="app-top-actions">
+                                    <button class="header-cart-btn btn-go-to-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="header-cart-badge">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- App Body -->
+                            <div class="app-dashboard-body flex-1 overflow-y">
+                                <div class="app-welcome-banner">
+                                    <h3>¡Hola, <span id="app-user-name">Usuario</span>!</h3>
+                                    <p>Bienvenido a SumiTechPoint. Todo en tecnología, beneficios y soporte para ti.</p>
+                                </div>
+
+                                <!-- App Menu Items -->
+                                <div class="app-menu-list">
+                                    <div class="app-menu-card" id="menu-btn-benefits">
+                                        <div class="menu-card-icon bg-pink"><i class="fa-solid fa-gift"></i></div>
+                                        <div class="menu-card-text">
+                                            <h4>Beneficios para ti</h4>
+                                            <p>Descubre tus beneficios exclusivos</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-right menu-chevron"></i>
+                                    </div>
+                                    <div class="app-menu-card" id="menu-btn-catalog">
+                                        <div class="menu-card-icon bg-cyan"><i class="fa-solid fa-cart-shopping"></i></div>
+                                        <div class="menu-card-text">
+                                            <h4>Catálogo digital</h4>
+                                            <p>Explora nuestros productos</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-right menu-chevron"></i>
+                                    </div>
+                                    <div class="app-menu-card" id="menu-btn-support">
+                                        <div class="menu-card-icon bg-blue"><i class="fa-solid fa-headset"></i></div>
+                                        <div class="menu-card-text">
+                                            <h4>Soporte técnico</h4>
+                                            <p>Estamos para ayudarte</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-right menu-chevron"></i>
+                                    </div>
+                                    <div class="app-menu-card" id="menu-btn-promos">
+                                        <div class="menu-card-icon bg-red"><i class="fa-solid fa-tags"></i></div>
+                                        <div class="menu-card-text">
+                                            <h4>Promociones exclusivas</h4>
+                                            <p>Ofertas y combos especiales</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-right menu-chevron"></i>
+                                    </div>
+                                    <!-- Referral Program Card -->
+                                    <div class="app-menu-card border-glow" id="menu-btn-referral">
+                                        <div class="menu-card-icon bg-green"><i class="fa-solid fa-users"></i></div>
+                                        <div class="menu-card-text">
+                                            <h4>Programa de Referidos</h4>
+                                            <p>Recomienda y gana beneficios adicionales</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-right menu-chevron"></i>
+                                    </div>
+                                    <!-- Purchase History Card -->
+                                    <div class="app-menu-card" id="menu-btn-history">
+                                        <div class="menu-card-icon bg-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                        <div class="menu-card-text">
+                                            <h4>Historial de compras</h4>
+                                            <p>Revisa tus pedidos realizados</p>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-right menu-chevron"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone active" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 7. Benefits Screen -->
+                        <div id="screen-app-benefits" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Beneficios para ti</div>
+                                <div class="app-top-actions">
+                                    <button class="header-cart-btn btn-go-to-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="header-cart-badge">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y">
+                                <div class="benefits-intro">
+                                    <p>Disfruta de beneficios exclusivos por ser parte de SumiTechPoint</p>
+                                </div>
+
+                                <div class="benefits-list">
+                                    <div class="benefit-card">
+                                        <span class="benefit-status-badge">30 días</span>
+                                        <div class="benefit-card-header">
+                                            <div class="benefit-icon antivirus"><i class="fa-solid fa-shield-halved"></i></div>
+                                            <div class="benefit-title">
+                                                <h4>Antivirus Gratuito</h4>
+                                                <p>Protege tu dispositivo durante 30 días.</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-blue-sm btn-claim" data-benefit="antivirus">Reclamar beneficio</button>
+                                    </div>
+                                    <div class="benefit-card">
+                                        <span class="benefit-status-badge">30 días</span>
+                                        <div class="benefit-card-header">
+                                            <div class="benefit-icon office"><i class="fa-solid fa-file-word"></i></div>
+                                            <div class="benefit-title">
+                                                <h4>Microsoft Office Gratuito</h4>
+                                                <p>Accede a Word, Excel, PowerPoint y más.</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-blue-sm btn-claim" data-benefit="office">Reclamar beneficio</button>
+                                    </div>
+                                    <div class="benefit-card">
+                                        <span class="benefit-status-badge">30 días</span>
+                                        <div class="benefit-card-header">
+                                            <div class="benefit-icon cloud"><i class="fa-solid fa-cloud"></i></div>
+                                            <div class="benefit-title">
+                                                <h4>Almacenamiento en la nube</h4>
+                                                <p>Guarda y accede a tus archivos en cualquier lugar.</p>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-blue-sm btn-claim" data-benefit="cloud">Reclamar beneficio</button>
+                                    </div>
+                                </div>
+
+                                <div class="benefits-disclaimer">
+                                    <p>* Después de 30 días, si deseas seguir usando estos beneficios, deberás realizar un pago.</p>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone active" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 8. Digital Catalog Screen -->
+                        <div id="screen-app-catalog" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Catálogo digital</div>
+                                <div class="app-top-actions">
+                                    <button class="header-cart-btn btn-go-to-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="header-cart-badge">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2">
+                                <div class="catalog-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" id="catalog-search-input" placeholder="Buscar productos...">
+                                </div>
+
+                                <div class="catalog-categories-grid">
+                                    <div class="category-card" data-category="laptops">
+                                        <div class="cat-icon"><i class="fa-solid fa-laptop"></i></div>
+                                        <span>Laptops</span>
+                                    </div>
+                                    <div class="category-card" data-category="pcs">
+                                        <div class="cat-icon"><i class="fa-solid fa-desktop"></i></div>
+                                        <span>Computadoras</span>
+                                    </div>
+                                    <div class="category-card" data-category="printers">
+                                        <div class="cat-icon"><i class="fa-solid fa-print"></i></div>
+                                        <span>Impresoras</span>
+                                    </div>
+                                    <div class="category-card" data-category="accessories">
+                                        <div class="cat-icon"><i class="fa-solid fa-keyboard"></i></div>
+                                        <span>Accesorios</span>
+                                    </div>
+                                    <div class="category-card" data-category="components">
+                                        <div class="cat-icon"><i class="fa-solid fa-microchip"></i></div>
+                                        <span>Componentes</span>
+                                    </div>
+                                    <div class="category-card" data-category="mouse">
+                                        <div class="cat-icon"><i class="fa-solid fa-mouse"></i></div>
+                                        <span>Mouse</span>
+                                    </div>
+                                    <div class="category-card" data-category="headphones">
+                                        <div class="cat-icon"><i class="fa-solid fa-headphones"></i></div>
+                                        <span>Audífonos</span>
+                                    </div>
+                                    <div class="category-card" data-category="monitors">
+                                        <div class="cat-icon"><i class="fa-solid fa-tv"></i></div>
+                                        <span>Monitores</span>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic Category View (Hidden initially) -->
+                                <div id="catalog-products-list" class="hidden mt-2">
+                                    <div class="catalog-category-header">
+                                        <h4 id="catalog-selected-category-name">Laptops</h4>
+                                        <button class="btn btn-muted-sm" id="btn-back-to-categories">Ver todas</button>
+                                    </div>
+                                    <div class="products-grid" id="catalog-products-container">
+                                        <!-- Products dynamically loaded by JS -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone active" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 9. Exclusive Promotions Screen -->
+                        <div id="screen-app-promos" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Promociones exclusivas</div>
+                                <div class="app-top-actions">
+                                    <button class="header-cart-btn btn-go-to-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="header-cart-badge">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2">
+                                <div class="promo-intro">
+                                    <p>Aprovecha nuestras ofertas exclusivas por tiempo limitado.</p>
+                                </div>
+
+                                <div class="promos-list">
+                                    <!-- Combo 1 -->
+                                    <div class="promo-card">
+                                        <span class="promo-discount-badge">18% DTO.</span>
+                                        <div class="promo-card-content">
+                                            <div class="promo-image-img">
+                                                <img src="keyboard_mouse_combo.png" alt="Combo Gamer" onerror="this.onerror=null; this.src='placeholder_product.png';">
+                                            </div>
+                                            <div class="promo-details">
+                                                <h4>Teclado Gamer + Mouse</h4>
+                                                <div class="promo-price-row">
+                                                    <span class="price-current">S/ 129.90</span>
+                                                    <span class="price-old">S/ 159.90</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-blue-sm btn-purchase-promo" data-promo="Combo Gamer" data-price="129.90">Adquirir Promo</button>
+                                    </div>
+                                    <!-- Combo 2 -->
+                                    <div class="promo-card">
+                                        <span class="promo-discount-badge">15% DTO.</span>
+                                        <div class="promo-card-content">
+                                            <div class="promo-image-img">
+                                                <img src="laptop_headphones_combo.png" alt="Combo Laptop" onerror="this.onerror=null; this.src='placeholder_product.png';">
+                                            </div>
+                                            <div class="promo-details">
+                                                <h4>Laptop + Audífonos</h4>
+                                                <div class="promo-price-row">
+                                                    <span class="price-current">S/ 2,299.00</span>
+                                                    <span class="price-old">S/ 2,699.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-blue-sm btn-purchase-promo" data-promo="Combo Laptop" data-price="2299.00">Adquirir Promo</button>
+                                    </div>
+                                    <!-- Combo 3 -->
+                                    <div class="promo-card">
+                                        <span class="promo-discount-badge">14% DTO.</span>
+                                        <div class="promo-card-content">
+                                            <div class="promo-image-img">
+                                                <img src="desktop_pc_setup.png" alt="PC Completa" onerror="this.onerror=null; this.src='placeholder_product.png';">
+                                            </div>
+                                            <div class="promo-details">
+                                                <h4>PC Completa + Accesorios</h4>
+                                                <div class="promo-price-row">
+                                                    <span class="price-current">S/ 1,899.00</span>
+                                                    <span class="price-old">S/ 2,199.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-blue-sm btn-purchase-promo" data-promo="PC Completa" data-price="1899.00">Adquirir Promo</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone active" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 10. Technical Support Screen -->
+                        <div id="screen-app-support" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Soporte técnico</div>
+                                <div class="app-top-actions">
+                                    <button class="header-cart-btn btn-go-to-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="header-cart-badge">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2">
+                                <div class="support-welcome-card">
+                                    <h4>Estamos para ayudarte</h4>
+                                    <p>Contáctanos a través de WhatsApp o inicia un chat directo aquí.</p>
+                                </div>
+
+                                <button class="btn btn-whatsapp-store w-full mt-1 mb-2" id="btn-whatsapp-click">
+                                    <i class="fa-brands fa-whatsapp"></i> Contáctanos por WhatsApp
+                                </button>
+
+                                <div class="contact-details-list">
+                                    <div class="contact-item">
+                                        <i class="fa-solid fa-phone text-green"></i>
+                                        <div>
+                                            <span>WhatsApp</span>
+                                            <p>+51 987 654 321</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fa-regular fa-clock text-blue"></i>
+                                        <div>
+                                            <span>Horario de atención</span>
+                                            <p>Lunes a Sábado: 9:00 a.m. - 7:00 p.m.</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fa-regular fa-envelope text-red"></i>
+                                        <div>
+                                            <span>También puedes escribirnos a</span>
+                                            <p class="text-blue">soporte@sumitechpoint.com.pe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- In-App Simulator Chat Trigger -->
+                                <button class="btn btn-blue w-full mt-2" id="btn-open-inapp-chat">
+                                    <i class="fa-regular fa-comments"></i> Iniciar Chat de Soporte
+                                </button>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone active" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 10.1 In-App Simulated Chat Window -->
+                        <div id="screen-inapp-chat" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn" id="btn-back-from-chat"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="chat-agent-info">
+                                    <div class="agent-avatar">ST</div>
+                                    <div>
+                                        <h4>Soporte SumiTech</h4>
+                                        <p class="agent-status"><span class="bullet-green"></span> En línea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Chat Area -->
+                            <div class="chat-messages flex-1 overflow-y p-2" id="chat-messages-container">
+                                <div class="chat-bubble received">
+                                    <p>¡Hola! Bienvenido al soporte de SumiTechPoint. ¿En qué podemos ayudarte hoy con tus beneficios de SumiTechPoint?</p>
+                                    <span class="chat-time">11:32 AM</span>
+                                </div>
+                            </div>
+                            <!-- Chat Input Bar -->
+                            <div class="chat-input-bar">
+                                <input type="text" id="chat-user-message-input" placeholder="Escribe tu consulta...">
+                                <button id="btn-send-chat-msg"><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- 11. Referral Program Screen -->
+                        <div id="screen-app-referrals" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Programa de Referidos</div>
+                                <div class="app-top-actions"><i class="fa-solid fa-users"></i></div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2">
+                                <div class="referral-banner bg-gradient-blue text-white">
+                                    <h4>¡Recomienda y Gana!</h4>
+                                    <p>Comparte la aplicación con tus amigos. Cuando se registren, ¡ambos recibirán beneficios exclusivos extendidos!</p>
+                                </div>
+
+                                <div class="card bg-white mt-1 text-center">
+                                    <span class="text-xs text-muted font-500">TU CÓDIGO DE REFERIDO</span>
+                                    <h3 class="referral-code" id="txt-referral-code">SUMI-9832-STP</h3>
+                                    <button class="btn btn-blue-outline w-full py-1 mt-1" id="btn-share-referral">
+                                        <i class="fa-regular fa-share-from-square"></i> Compartir Enlace
+                                    </button>
+                                </div>
+
+                                <div class="simulated-referral-box mt-2">
+                                    <h4>Simulador de Recomendación</h4>
+                                    <p class="text-xs text-muted">Haz clic en el botón para simular que tus amigos descargan e instalan la aplicación usando tu código de referido. Esto impactará en el panel de evidencias izquierdo.</p>
+                                    <button class="btn btn-green w-full mt-1" id="btn-trigger-sim-referral">
+                                        <i class="fa-solid fa-user-plus"></i> Simular Registro de Referido (+1)
+                                    </button>
+                                </div>
+
+                                <div class="friends-list-container mt-2">
+                                    <h4>Amigos recomendados (<span id="txt-ref-count">0</span>)</h4>
+                                    <ul class="friends-list" id="ref-friends-ul">
+                                        <li class="empty-list-placeholder">Aún no has recomendado amigos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 12. Shopping Cart Screen -->
+                        <div id="screen-app-cart" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Mi Carrito</div>
+                                <div class="app-top-actions"><i class="fa-solid fa-cart-shopping text-blue"></i></div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2" id="cart-screen-body">
+                                <div class="cart-items-list" id="cart-items-container">
+                                    <!-- Dynamic Cart Items -->
+                                </div>
+                                <div class="cart-summary-card card bg-white mt-1" id="cart-summary-wrapper">
+                                    <div class="cart-summary-row">
+                                        <span>Subtotal</span>
+                                        <span id="cart-subtotal">S/ 0.00</span>
+                                    </div>
+                                    <div class="cart-summary-row">
+                                        <span>IGV (18%)</span>
+                                        <span id="cart-igv">S/ 0.00</span>
+                                    </div>
+                                    <hr class="divider">
+                                    <div class="cart-summary-row total">
+                                        <span>Total</span>
+                                        <span id="cart-total" class="text-blue font-700">S/ 0.00</span>
+                                    </div>
+                                    <button class="btn btn-blue w-full mt-2" id="btn-cart-checkout">Proceder al Pago</button>
+                                </div>
+                                <div class="cart-empty-state text-center py-4 hidden" id="cart-empty-state">
+                                    <i class="fa-solid fa-cart-flatbed-suitcases text-giant text-muted mb-1"></i>
+                                    <h4 class="mt-1">Tu carrito está vacío</h4>
+                                    <p class="text-xs text-muted mt-1">Explora nuestro catálogo para agregar productos tecnológicos.</p>
+                                    <button class="btn btn-blue w-full mt-2 back-to-home">Ir al Catálogo</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 13. Checkout Screen -->
+                        <div id="screen-app-checkout" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn" id="btn-back-from-checkout"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Método de Pago</div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2">
+                                <div class="checkout-amount-banner bg-gradient-blue text-white text-center p-2 rounded-10">
+                                    <span class="text-xs opacity-80">TOTAL A PAGAR</span>
+                                    <h2 id="checkout-total-val" class="font-800">S/ 0.00</h2>
+                                </div>
+
+                                <div class="payment-methods mt-2">
+                                    <h4>Selecciona tu método de pago</h4>
+                                    <div class="payment-method-options mt-1">
+                                        <div class="payment-method-card active" data-method="card">
+                                            <i class="fa-regular fa-credit-card"></i>
+                                            <span>Tarjeta de Crédito</span>
+                                        </div>
+                                        <div class="payment-method-card" data-method="yape">
+                                            <i class="fa-solid fa-mobile-screen-button"></i>
+                                            <span>Yape / Plin</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card Payment Form -->
+                                <form id="form-payment-card" class="app-form mt-2">
+                                    <div class="form-group-phone">
+                                        <i class="fa-regular fa-user form-icon"></i>
+                                        <input type="text" id="pay-card-name" placeholder="Titular de la tarjeta" required>
+                                    </div>
+                                    <div class="form-group-phone">
+                                        <i class="fa-regular fa-credit-card form-icon"></i>
+                                        <input type="text" id="pay-card-number" placeholder="Número de tarjeta" maxlength="19" required>
+                                    </div>
+                                    <div class="grid-2">
+                                        <div class="form-group-phone">
+                                            <i class="fa-regular fa-calendar form-icon"></i>
+                                            <input type="text" id="pay-card-expiry" placeholder="MM/AA" maxlength="5" required>
+                                        </div>
+                                        <div class="form-group-phone">
+                                            <i class="fa-solid fa-key form-icon"></i>
+                                            <input type="password" id="pay-card-cvv" placeholder="CVV" maxlength="3" required>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-green w-full py-2 font-600 mt-2" id="btn-pay-confirm">Confirmar y Pagar</button>
+                                </form>
+
+                                <!-- Yape / Plin QR Form -->
+                                <div id="yape-payment-box" class="card bg-white mt-2 text-center hidden">
+                                    <h4>Paga con Yape o Plin</h4>
+                                    <p class="text-xs text-muted mt-1">Escanea el código QR desde tu app bancaria.</p>
+                                    <div class="qr-code-box mt-2">
+                                        <i class="fa-solid fa-qrcode text-giant text-blue"></i>
+                                    </div>
+                                    <button class="btn btn-green w-full mt-2" id="btn-yape-pay-confirm">Ya realicé el pago</button>
+                                </div>
+
+                                <!-- Loading processing screen simulator -->
+                                <div id="checkout-loading-screen" class="checkout-overlay hidden">
+                                    <div class="spinner-large"></div>
+                                    <h3>Procesando Pago...</h3>
+                                    <p class="text-xs text-muted mt-1">Por favor no cierres la aplicación</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 14. Payment Success Screen -->
+                        <div id="screen-app-payment-success" class="phone-screen-view bg-light text-center flex-col">
+                            <div class="app-screen-body flex-1 flex-col justify-center align-center p-2">
+                                <div class="success-checkmark text-green">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <h2 class="success-title">¡Compra Exitosa!</h2>
+                                <p class="text-xs text-muted mt-1">Tu pedido de tecnología ha sido procesado correctamente.</p>
+
+                                <div class="receipt-card card bg-white text-left mt-2 w-full p-2">
+                                    <div class="receipt-header text-center">
+                                        <span class="logo-accent font-700">Sumi</span><strong class="font-700">TechPoint</strong>
+                                        <p class="text-xs text-muted mt-1">Boleta Electrónica de Venta</p>
+                                    </div>
+                                    <hr class="divider mt-1 mb-1">
+                                    <div class="receipt-row">
+                                        <span>Transacción:</span>
+                                        <strong id="receipt-tx-id">STP-123456</strong>
+                                    </div>
+                                    <div class="receipt-row">
+                                        <span>Fecha:</span>
+                                        <span id="receipt-date">04-Jul-2026</span>
+                                    </div>
+                                    <div class="receipt-row">
+                                        <span>Método Pago:</span>
+                                        <span id="receipt-method">Tarjeta</span>
+                                    </div>
+                                    <hr class="divider mt-1 mb-1">
+                                    <div class="receipt-row total">
+                                        <span>Total Pagado:</span>
+                                        <strong id="receipt-amount" class="text-blue">S/ 0.00</strong>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-blue w-full py-2 mt-2" id="btn-receipt-finish">Finalizar y Volver</button>
+                            </div>
+                        </div>
+
+                        <!-- 15. Purchase History Screen -->
+                        <div id="screen-app-history" class="phone-screen-view bg-light flex-col">
+                            <div class="app-top-header">
+                                <button class="app-back-btn back-to-home"><i class="fa-solid fa-arrow-left"></i></button>
+                                <div class="app-header-title">Mis Compras</div>
+                                <div class="app-top-actions">
+                                    <button class="header-cart-btn btn-go-to-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="header-cart-badge">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="app-screen-body flex-1 overflow-y p-2">
+                                <div class="history-list" id="history-items-container">
+                                    <!-- Dynamic purchases -->
+                                </div>
+                                <div class="history-empty-state text-center py-4 hidden" id="history-empty-state">
+                                    <i class="fa-solid fa-receipt text-giant text-muted mb-1"></i>
+                                    <h4 class="mt-1">Sin compras registradas</h4>
+                                    <p class="text-xs text-muted mt-1">Aún no has realizado ninguna compra en SumiTechPoint.</p>
+                                    <button class="btn btn-blue w-full mt-2 back-to-home">Comprar productos</button>
+                                </div>
+                            </div>
+                            <!-- Bottom Nav Bar -->
+                            <div class="app-bottom-nav">
+                                <button class="nav-item-phone" data-app-screen="screen-app-home">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Inicio</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-benefits">
+                                    <i class="fa-solid fa-gift"></i>
+                                    <span>Beneficios</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-catalog">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Catálogo</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-support">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>Soporte</span>
+                                </button>
+                                <button class="nav-item-phone" data-app-screen="screen-app-promos">
+                                    <i class="fa-solid fa-tags"></i>
+                                    <span>Promos</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Global Phone Modal Overlay -->
+                    <div id="phone-global-modal" class="phone-modal-overlay hidden">
+                        <div class="phone-modal-card">
+                            <div class="phone-modal-icon text-green"><i class="fa-solid fa-envelope-open-text"></i></div>
+                            <h3 id="phone-modal-title">¡Beneficio Reclamado!</h3>
+                            <p id="phone-modal-message">Hemos enviado el código de licencia e instrucciones de activación a tu correo electrónico.</p>
+                            <button class="btn btn-blue w-full mt-2" id="btn-phone-modal-close">Entendido</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Home Indicator Button -->
+                <div class="phone-home-btn" id="phone-hardware-home"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
