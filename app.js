@@ -3,6 +3,29 @@
    ========================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+    /* ==========================================
+       GLOBAL THEME SWITCHER (CLARO / OSCURO)
+       ========================================== */
+    const themeToggle = document.getElementById('btn-theme-toggle');
+    
+    // Default to Light theme (light mode)
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'light') {
+        document.body.classList.add('theme-light');
+        if (themeToggle) themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        document.body.classList.remove('theme-light');
+        if (themeToggle) themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('theme-light');
+            const isLight = document.body.classList.contains('theme-light');
+            themeToggle.innerHTML = isLight ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    }
     // Current Active Registered User
     let currentUser = null;
     let claimedBenefits = [];
@@ -74,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================
        ADMIN PANEL SIDEBAR NAVIGATION
        ========================================== */
-    const navButtons = document.querySelectorAll('.nav-btn');
+    const navButtons = document.querySelectorAll('.sidebar-btn');
     const adminSections = document.querySelectorAll('.admin-section');
 
     navButtons.forEach(btn => {
@@ -899,5 +922,139 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.head.appendChild(style);
     }
+
+    /* ==========================================
+       SUMINISTROS SLIDESHOW LOGIC
+       ========================================== */
+    const suministrosSlides = document.querySelectorAll('#suministros-track .slideshow-slide');
+    const suministrosDots = document.querySelectorAll('#suministros-dots .slideshow-dot');
+    const suministrosThumbs = document.querySelectorAll('#suministros-thumbs .slideshow-thumb');
+    const suministrosPrev = document.getElementById('suministros-prev');
+    const suministrosNext = document.getElementById('suministros-next');
+    const suministrosCurrent = document.getElementById('suministros-current');
+    let currentSlide = 0;
+    const totalSlides = suministrosSlides.length;
+
+    function goToSlide(index) {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        
+        suministrosSlides.forEach(s => s.classList.remove('active'));
+        suministrosDots.forEach(d => d.classList.remove('active'));
+        suministrosThumbs.forEach(t => t.classList.remove('active'));
+
+        suministrosSlides[index].classList.add('active');
+        suministrosDots[index].classList.add('active');
+        suministrosThumbs[index].classList.add('active');
+
+        if (suministrosCurrent) {
+            suministrosCurrent.textContent = index + 1;
+        }
+
+        // Scroll active thumbnail into view
+        suministrosThumbs[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+        currentSlide = index;
+    }
+
+    if (suministrosPrev) {
+        suministrosPrev.addEventListener('click', () => goToSlide(currentSlide - 1));
+    }
+    if (suministrosNext) {
+        suministrosNext.addEventListener('click', () => goToSlide(currentSlide + 1));
+    }
+
+    suministrosDots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            goToSlide(parseInt(dot.getAttribute('data-dot')));
+        });
+    });
+
+    suministrosThumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            goToSlide(parseInt(thumb.getAttribute('data-thumb')));
+        });
+    });
+
+    // Fullscreen Overlay Elements
+    const fsOverlay = document.getElementById('fullscreen-overlay');
+    const fsImage = document.getElementById('fs-image');
+    const fsClose = document.getElementById('fs-close');
+    const fsPrev = document.getElementById('fs-prev');
+    const fsNext = document.getElementById('fs-next');
+    const fsCurrent = document.getElementById('fs-current');
+    const fsTotal = document.getElementById('fs-total');
+    const fsBtn = document.getElementById('suministros-fullscreen');
+
+    if (fsTotal && totalSlides) {
+        fsTotal.textContent = totalSlides;
+    }
+
+    function openFullscreen() {
+        if (!fsOverlay || !fsImage) return;
+        updateFullscreenImage();
+        fsOverlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Lock scroll while presenting
+    }
+
+    function closeFullscreen() {
+        if (!fsOverlay) return;
+        fsOverlay.classList.add('hidden');
+        document.body.style.overflow = ''; // Restore page scroll
+    }
+
+    function updateFullscreenImage() {
+        if (!fsImage) return;
+        const currentActiveSlideImg = suministrosSlides[currentSlide].querySelector('img');
+        if (currentActiveSlideImg) {
+            fsImage.src = currentActiveSlideImg.src;
+            fsImage.alt = currentActiveSlideImg.alt;
+        }
+        if (fsCurrent) {
+            fsCurrent.textContent = currentSlide + 1;
+        }
+    }
+
+    function navigateFullscreen(direction) {
+        goToSlide(currentSlide + direction);
+        updateFullscreenImage();
+    }
+
+    if (fsBtn) {
+        fsBtn.addEventListener('click', openFullscreen);
+    }
+    if (fsClose) {
+        fsClose.addEventListener('click', closeFullscreen);
+    }
+    if (fsPrev) {
+        fsPrev.addEventListener('click', () => navigateFullscreen(-1));
+    }
+    if (fsNext) {
+        fsNext.addEventListener('click', () => navigateFullscreen(1));
+    }
+
+    // Keyboard navigation for slideshow (main and fullscreen views)
+    document.addEventListener('keydown', (e) => {
+        const isFsOpen = fsOverlay && !fsOverlay.classList.contains('hidden');
+        
+        if (isFsOpen) {
+            if (e.key === 'Escape') {
+                closeFullscreen();
+            } else if (e.key === 'ArrowLeft') {
+                navigateFullscreen(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateFullscreen(1);
+            }
+        } else {
+            const suministrosSec = document.getElementById('suministros-sec');
+            if (suministrosSec && suministrosSec.classList.contains('active')) {
+                if (e.key === 'ArrowLeft') {
+                    goToSlide(currentSlide - 1);
+                } else if (e.key === 'ArrowRight') {
+                    goToSlide(currentSlide + 1);
+                }
+            }
+        }
+    });
 
 });
